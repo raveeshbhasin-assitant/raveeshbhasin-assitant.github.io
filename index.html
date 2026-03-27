@@ -3,94 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Daily Scoop — Local Archive</title>
+<title>&#9749; The Daily Scoop</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: #f9f9f9; font-family: Georgia, serif; color: #222; }
-
-  /* Sticky Tab Bar */
-  #tab-bar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: #1a1a2e;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    overflow-x: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #444 #1a1a2e;
-    border-bottom: 2px solid #16213e;
-  }
-  #tab-bar::-webkit-scrollbar { height: 4px; }
-  #tab-bar::-webkit-scrollbar-track { background: #1a1a2e; }
-  #tab-bar::-webkit-scrollbar-thumb { background: #444; border-radius: 2px; }
-
-  .tab-logo {
-    color: #f5e6c8;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 14px 16px 14px 4px;
-    white-space: nowrap;
-    border-right: 1px solid #2a2a4e;
-    margin-right: 8px;
-    letter-spacing: 0.5px;
-  }
-
-  .tab-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-family: Georgia, serif;
-    font-size: 14px;
-    color: #7a8a9a;
-    white-space: nowrap;
-    border-bottom: 3px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
-  }
-  .tab-btn:hover { color: #c8d8e8; }
-  .tab-btn.active {
-    color: #f5e6c8;
-    border-bottom: 3px solid #f5e6c8;
-    font-weight: bold;
-  }
-
-  /* Content Panels */
-  #content-area {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 24px 16px 40px;
-  }
-
-  .day-panel { display: none; }
-  .day-panel.active { display: block; }
-
-  /* Footer */
-  #site-footer {
-    background: #1a1a2e;
-    color: #7a8a9a;
-    text-align: center;
-    padding: 14px;
-    font-size: 12px;
-    font-family: Georgia, serif;
-    border-top: 1px solid #16213e;
-  }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, serif; background: #f9f9f9; }
+.tab-bar { position: sticky; top: 0; z-index: 100; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; align-items: center; padding: 0 24px; gap: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.3); overflow-x: auto; }
+.tab-bar-title { color: #fff; font-size: 16px; font-weight: bold; margin-right: 16px; padding: 14px 0; white-space: nowrap; flex-shrink: 0; }
+.tab { padding: 14px 16px; cursor: pointer; font-size: 13px; font-family: Georgia, serif; color: #aaa; border-bottom: 3px solid transparent; white-space: nowrap; flex-shrink: 0; }
+.tab.active { color: #fff; border-bottom-color: #e8d5a3; font-weight: bold; }
+.tab:hover:not(.active) { color: #ddd; }
+.day-panel { display: none; max-width: 800px; margin: 32px auto; padding: 0 24px 60px; }
+.day-panel.active { display: block; }
+.footer { text-align: center; color: #bbb; font-size: 12px; padding: 20px; }
 </style>
 </head>
 <body>
-
-<!-- TAB BAR -->
-<div id="tab-bar">
-  <div class="tab-logo">☕ The Daily Scoop</div>
-  <button class="tab-btn active" onclick="showDay('2026-03-26', this)">Today</button>
+<div class="tab-bar">
+  <span class="tab-bar-title">&#9749; The Daily Scoop</span>
+  <div class="tab active" onclick="showDay('day-2026-03-27')">Today</div>
+  <div class="tab" onclick="showDay('day-2026-03-26')">Thu Mar 26</div>
 </div>
 
-<!-- CONTENT AREA -->
-<div id="content-area">
+<!-- DAY_START: 2026-03-27 | Fri Mar 27 -->
+<div class="day-panel active" id="day-2026-03-27">
+<div style="font-family: Georgia, serif; max-width: 800px; margin: 0 auto; background: #ffffff;">
+
+  <!-- HEADER -->
+  <div style="background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 40px 32px; text-align: center; border-radius: 8px 8px 0 0;">
+    <div style="font-size: 42px; margin-bottom: 8px;">&#9749;</div>
+    <h1 style="color: #ffffff; font-size: 32px; margin: 0 0 8px 0; font-family: Georgia, serif; letter-spacing: 1px;">The Daily Scoop</h1>
+    <p style="color: #e8d5a3; font-size: 15px; margin: 0; font-style: italic;">Your world in 5 minutes &#8212; Friday, March 27, 2026</p>
+  </div>
+
+  <div style="padding: 32px; background: #ffffff;">
+
+    <h2 style="color: #e74c3c; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#127757; The Big Headlines</h2>
+
+    <p><strong>Iran War, Day 27: Pause Extended, Peace Talks Floated</strong><br>
+    Trump extended the U.S. pause on striking Iranian energy infrastructure through April 6, saying negotiations are "going very well." Special envoy Steve Witkoff presented a 15-point peace proposal to Tehran at a Cabinet meeting &#8212; though Iran continues to deny formal ceasefire talks. Meanwhile, thousands have been killed and Israeli strikes on Lebanon have left over 1,100 dead since March 2.</p>
+
+    <p><strong>G7 Huddle in France</strong><br>
+    World leaders are gathering in France for the G7, where Secretary of State Marco Rubio is working overtime to convince reluctant allies to back the U.S.-Israeli war posture on Iran. Expect lots of diplomatic coffee and politely disagreeing smiles.</p>
+
+    <p><strong>Strait of Hormuz Squeeze</strong><br>
+    Iran's shutoff of oil and gas through the Strait of Hormuz is hitting Southeast Asia especially hard &#8212; many countries are almost entirely dependent on foreign energy and are scrambling to find alternatives as the crisis drags on.</p>
+
+    <p><strong>Farmworkers Day: Newsom Renames Cesar Chavez Holiday</strong><br>
+    California Governor Gavin Newsom signed legislation renaming Cesar Chavez Day as Farmworkers Day &#8212; an attempt to reconcile the labor icon's legacy with recently surfaced sexual abuse allegations, ahead of the holiday on March 31.</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <h2 style="color: #ff9933; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#127470;&#127475; India Dispatch</h2>
+
+    <p><strong>Excise Duty Cut in the Spotlight</strong><br>
+    The Centre's move to cut excise duty on petrol and diesel is drawing attention from economists who warn it could result in a fiscal loss of Rs 1.5 trillion &#8212; a hefty price for consumer relief at the pump.</p>
+
+    <p><strong>Real Estate Stocks Slide 22%</strong><br>
+    The Nifty Realty index has shed 22% in 2026, battered by a combo of IT sector layoffs and broader market unease stemming from the ongoing Iran-US conflict and its ripple effects on global oil prices.</p>
+
+    <p><strong>India Cements Climate Commitments</strong><br>
+    The Modi cabinet approved India's updated Nationally Determined Contribution (NDC), laying out long-term targets to cut carbon emissions and adapt to climate impacts &#8212; a significant step ahead of upcoming global climate talks.</p>
+
+    <p><strong>Analysts Bullish on These 3 Names</strong><br>
+    Brokerages are initiating coverage on Sagility, Solar Industries, and Ather Energy, citing strong growth visibility across AI services, defense manufacturing, and the EV sector respectively.</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <h2 style="color: #8e44ad; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#129302; AI Pulse</h2>
+
+    <p><strong>Google's Personal Intelligence Goes Wide</strong><br>
+    Google is rolling out its Personal Intelligence feature to all U.S. users &#8212; Gemini will now draw on data from your Gmail, Google Photos, and YouTube history to deliver eerily context-aware responses. Previously a paid perk; now just... the default. Welcome to the future, whether you're ready or not.</p>
+
+    <p><strong>AI Ad Spend: $57 Billion and Counting</strong><br>
+    AI-driven advertising is projected to grow a jaw-dropping 63% in 2026, reaching $57 billion and claiming a significant slice of total global ad spend. Brands are all-in on AI-generated creative, targeting, and optimization.</p>
+
+    <p><strong>Trump Unveils National AI Legislative Framework</strong><br>
+    The White House released its blueprint for AI regulation &#8212; a framework aimed at positioning the U.S. as the global leader in AI development while addressing safety and governance concerns. The document is generating plenty of debate about whether it's bold enough (or perhaps too permissive).</p>
+
+    <p><strong>AI Models Humbled by Benchmark Test</strong><br>
+    In a delightfully humbling turn, the latest AI benchmark saw top models score under 1%, while humans breezed through the same tasks. For all the hype, it turns out there are still some things humans do embarrassingly better. (For now.)</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <h2 style="color: #27ae60; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#128101; HR &amp; People Analytics</h2>
+
+    <p><strong>Talent Intelligence Is the New Black</strong><br>
+    People analytics (12.4% CAGR) and talent intelligence (17.9% CAGR) are emerging as the most strategically important layers in workforce planning. Organizations are embedding insights directly into ATS platforms and HRIS systems &#8212; meaning hiring and mobility decisions are increasingly data-first, not gut-first.</p>
+
+    <p><strong>55% of Companies Boosting HR Tech Spend</strong><br>
+    More than half of organizations are increasing their HR technology budgets this year, and analysts project the AI-in-HR-tech market to triple by 2030. The big bets: employee experience platforms, real-time analytics, and AI-powered talent intelligence tools.</p>
+
+    <p><strong>Could AI Unlock the 4-Day Workweek?</strong><br>
+    SHRM's March 2026 HR Technology Trends report highlights how AI automation is accelerating business cycles &#8212; with some experts arguing this could finally make the much-discussed 4-day workweek viable at scale. Demand for "AI-adjacent" workers who can manage and collaborate with AI systems is surging.</p>
+
+    <p><strong>The "Culture Atrophy" Problem</strong><br>
+    Deloitte's Global Human Capital Trends report flags a growing crisis: workplaces stuck in a state of culture atrophy, where low engagement and disconnection are making it hard to build productive, skilled teams. New workforce analytics tools &#8212; including organizational digital twins &#8212; are being positioned as the remedy.</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <h2 style="color: #2c3e50; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#128176; Financial Services Beat</h2>
+
+    <div style="background: #f0f4f8; border-left: 4px solid #2c3e50; padding: 16px 20px; margin-bottom: 20px; border-radius: 0 6px 6px 0;">
+      <strong>&#127970; FIDELITY SPOTLIGHT</strong><br><br>
+      <strong>Fidelity Hits $7.1 Trillion AUM &#8212; A Record Year</strong><br>
+      Fidelity Investments reported a landmark 2025: assets under management climbed to $7.1 trillion (up from $5.9T the prior year) and revenue jumped 15% to a record $37.7 billion. Not bad for a Friday.<br><br>
+      <strong>Fidelity Now Has 80,000+ Employees</strong><br>
+      A new report shows Fidelity has smashed past 80,000 staff &#8212; doubling its headcount over six years, while competitors like Schwab and Morgan Stanley barely budged. The firm is hiring at "both poles": client-facing service staff and technology talent for automation.<br><br>
+      <strong>Data Breach Settlement Clears Court</strong><br>
+      The $2.5M class action settlement over Fidelity's August 2024 data breach received preliminary court approval on March 11. Approximately 155,000 individuals may have been affected; eligible folks can claim cash and credit monitoring services.
+    </div>
+
+    <div style="background: #f8f4f0; border-left: 4px solid #8b6914; padding: 16px 20px; margin-bottom: 20px; border-radius: 0 6px 6px 0;">
+      <strong>&#127963; CAMBRIDGE ASSOCIATES SPOTLIGHT</strong><br><br>
+      <strong>2026 PE/VC Outlook: Cautious Optimism</strong><br>
+      Cambridge Associates released its 2026 Private Equity &amp; Venture Capital outlook, with Global Head of Private Investments Andrea Auerbach discussing institutional investor positioning on Bloomberg TV. The firm sees equity long/short strategies playing a key role in portfolio diversification this year amid market volatility.
+    </div>
+
+    <p><strong>Fed Holds Steady, Still Eyes One Cut in 2026</strong><br>
+    The Federal Reserve held rates unchanged at its March 18 meeting, citing inflation uncertainty and elevated energy prices. Officials' projections still pencil in one rate cut later this year &#8212; but the Iran conflict is keeping the economic outlook murky.</p>
+
+    <p><strong>SEC Clarifies Digital Asset Categories</strong><br>
+    The SEC has outlined four asset categories under the GENIUS Act that won't be deemed securities: digital commodities, digital collectibles, digital tools, and payment stablecoins. Only digital securities remain subject to traditional securities laws.</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <h2 style="color: #2980b9; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#128202; Market Research &amp; Analytics</h2>
+
+    <p><strong>Business Intelligence Market Hits $32B in 2026</strong><br>
+    The global BI market is growing at 11.4% CAGR, expected to reach $31.97 billion this year &#8212; up from $28.71B in 2025. Top trends driving growth: data quality management, AI governance, and data literacy initiatives across organizations of all sizes.</p>
+
+    <p><strong>Big Data &amp; Analytics: $152B and Growing</strong><br>
+    The broader big data and analytics market is expanding at 12.8% CAGR, projected at $151.89 billion in 2026. Real-time processing and cloud-native architectures are the biggest investment areas, with enhanced data security governance close behind.</p>
+
+    <p><strong>Agentic AI Comes to Analytics</strong><br>
+    The hottest new paradigm? Autonomous AI agents that independently query data, generate insights, identify trends, and build visualizations &#8212; all without human intervention. Major vendors are racing to embed agentic AI into their BI platforms, signaling a leap toward fully AI-driven decision intelligence.</p>
+
+    <p><strong>IQVIA Expands Real-World Evidence Platform</strong><br>
+    IQVIA expanded its RWE analytics platform in March to integrate real-time patient data for oncology and rare disease studies &#8212; a significant move that could accelerate clinical evidence generation and regulatory submissions.</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <h2 style="color: #c0392b; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#9917; Red Devils Report</h2>
+
+    <p><strong>3rd Place and Grinding &#8212; The Carrick Era Continues</strong><br>
+    Your Red Devils are sitting in 3rd place in the Premier League with 55 points from 31 matches (15W 10D 6L) &#8212; well within the fight for a Champions League return. Michael Carrick has steadied the ship since Ruben Amorim's January departure, and while it's not always pretty, results have been coming.</p>
+
+    <p><strong>Last Result: Bournemouth 2&#8211;2 Man Utd (March 20)</strong><br>
+    A frustrating draw at Vitality Stadium &#8212; United led but couldn't hold on. The boys are currently on international break, giving Carrick time to regroup and rotate. 24 days off the pitch. No pressure.</p>
+
+    <p><strong>Summer Transfer Buzz: Hall, Diomande &amp; Ndiaye</strong><br>
+    As United eyes a return to European football, the summer transfer window planning is underway. Lewis Hall (Newcastle), Yan Diomande, and Iliman Ndiaye are reportedly on the radar. Could be an exciting rebuild ahead &#8212; or another summer of "almost got him" heartbreak. We know the drill.</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <h2 style="color: #1abc9c; font-size: 20px; margin: 0 0 16px 0; font-family: Georgia, serif;">&#127751; Boston Buzz</h2>
+
+    <p><strong>&#127936; Celtics vs. Atlanta Hawks &#8212; Tonight!</strong><br>
+    The green and white take on the Hawks at TD Garden tonight (Friday, March 27) at 7:30pm. Grab your lucky shamrock and head to Causeway Street.</p>
+
+    <p><strong>&#127914; Ringling Bros. Circus at Agganis Arena &#8212; Tonight!</strong><br>
+    The Greatest Show on Earth is in town! Ringling Bros. and Barnum &amp; Bailey Circus performs tonight at 7:00pm at Agganis Arena. Perfect for families &#8212; and honestly, for anyone who just wants to watch acrobats and forget about geopolitics for a while.</p>
+
+    <p><strong>&#127917; Suffs &#8212; Tony Award-Winning Musical, Direct from Broadway</strong><br>
+    The critically acclaimed musical about American women who fought for the right to vote has landed in Boston. Powerful, moving, and relevant. Catch it while you can.</p>
+
+    <p><strong>&#129488; Boston Ballet: The Dream + World Premiere</strong><br>
+    Boston Ballet is presenting Sir Frederick Ashton's dreamy classic <em>The Dream</em> alongside a brand-new world premiere piece by choreographer My'Kal Stromile. A perfect date night combo of old elegance and fresh creativity.</p>
+
+    <p><strong>&#127905; The Greenway Ferris Wheel &#8212; Extended Through April!</strong><br>
+    Gorgeous skyline views from the Rose Kennedy Greenway's Ferris Wheel have been extended through April. Go catch a spin while the spring air is fresh and before the summer crowds arrive.</p>
+
+    <hr style="border: none; border-top: 2px dashed #eee; margin: 28px 0;">
+
+    <p style="text-align: center; font-style: italic; color: #888; font-size: 14px; margin-top: 32px;">
+      That's your Scoop for Friday, March 27. The world's a lot &#8212; but hey, at least there's Ringling Bros., a Celtics game, and the promise of one Fed rate cut somewhere on the horizon. &#9749;<br><br>
+      <em>Stay curious, stay caffeinated.</em>
+    </p>
+
+  </div>
+
+  <div style="background: #1a1a2e; padding: 20px; text-align: center; border-radius: 0 0 8px 8px;">
+    <p style="color: #888; font-size: 12px; margin: 0; font-family: Georgia, serif;">&#9749; The Daily Scoop &#8226; Delivered with love and too much coffee</p>
+  </div>
+
+</div>
+</div>
+<!-- DAY_END: 2026-03-27 -->
 
 <!-- DAY_START: 2026-03-26 | Thu Mar 26 -->
-<div id="day-2026-03-26" class="day-panel active">
+<div class="day-panel" id="day-2026-03-26"><div id="day-2026-03-26" class="day-panel active">
   <div class="day-content">
 <!DOCTYPE html>
 <html lang="en">
@@ -218,46 +319,18 @@
 </td></tr>
 </table>
   </div>
-</div>
+</div></div>
 <!-- DAY_END: 2026-03-26 -->
 
-</div><!-- end content-area -->
-
-<!-- FOOTER -->
-<div id="site-footer">
-  The Daily Scoop &bull; Local Archive &bull; 1 issue
-</div>
+<div class="footer">&#9749; The Daily Scoop &bull; 2 issues</div>
 
 <script>
-function showDay(dateId, btn) {
-  // Hide all panels
-  document.querySelectorAll('.day-panel').forEach(function(p) {
-    p.classList.remove('active');
-    p.style.display = 'none';
-  });
-  // Deactivate all tabs
-  document.querySelectorAll('.tab-btn').forEach(function(b) {
-    b.classList.remove('active');
-  });
-  // Show selected panel
-  var panel = document.getElementById('day-' + dateId);
-  if (panel) {
-    panel.style.display = 'block';
-    panel.classList.add('active');
-  }
-  // Activate selected tab
-  btn.classList.add('active');
+function showDay(id) {
+  document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
 }
-
-// Initialize: show today's panel
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.day-panel').forEach(function(p) {
-    p.style.display = 'none';
-  });
-  var today = document.querySelector('.day-panel.active');
-  if (today) today.style.display = 'block';
-});
 </script>
-
 </body>
 </html>
